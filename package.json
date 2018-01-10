@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "author": "Sergio Llanos",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "mongoose": "^4.12.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.10"
   }
 }
