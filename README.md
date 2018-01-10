@@ -1,4 +1,4 @@
-# NodeJS CondorLabs Sergio Llanos
+# NodeJS Activity Technology Sergio Llanos
 ========================
 
 This repo contains the test of Activity Technology
