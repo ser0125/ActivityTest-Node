@@ -1,0 +1,11 @@
+{
+  "name": "databaseMongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Sergio Llanos",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.12.4"
+  }
+}
