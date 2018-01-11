@@ -30,13 +30,16 @@ user.save(function(err) {
 //This method is activated when a user tries to login in the application
 function loginUsers(req,res){
 User.findOne({user: req.body.user, password: req.body.password},(err, user)=>{
+  console.log(user);
   if (err) throw err;
-  else if(user.admin){
-      res.send(user);
+  else if(user!=null){
+      if(user.admin == null || user.admin == false){
+        console.log("Your data");
+      }else{
+        console.log("Data of everybody");
+      }
   }
-  else{
-     res.sendFile(__dirname + '/app/views/index.html');
-  }
+  console.log("Nombre o usuario incorrecto");
 });
 }
 

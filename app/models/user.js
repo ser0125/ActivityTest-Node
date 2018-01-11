@@ -1,7 +1,6 @@
 //We are going to use  Moongose so here we import that
 const mongoose = require('mongoose');  
 
-
 //Here we connect to the database
 mongoose.connect('mongodb://localhost/users');
 
@@ -15,6 +14,8 @@ var Schema = mongoose.Schema;
         mail: String,
         admin: Boolean
       });
+
+      
 
 // the schema is useless so far
 // we need to create a model using it

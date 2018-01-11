@@ -11,6 +11,7 @@ app.listen(3000, function() {     //The application is going to be listen in the
 });
 //We are going to use the routes  
 app.use('/', routes); 
+app.use(express.static("./app/views/css"));
 
 module.exports = app
 
