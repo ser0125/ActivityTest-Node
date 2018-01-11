@@ -2,6 +2,9 @@
 var User = require('../models/user');
 var path = require('path');
 
+
+
+
 //This method return the principal page
 function getIndex(req, res) {
   res.sendFile(path.resolve(__dirname + '/../views/index.html'));
@@ -39,8 +42,9 @@ User.findOne({user: req.body.user, password: req.body.password},(err, user)=>{
         console.log("Data of everybody");
       }
   }
-  console.log("Nombre o usuario incorrecto");
+console.log("Nombre o usuario incorrecto")
 });
+
 }
 
 module.exports = { // Export all the methods
